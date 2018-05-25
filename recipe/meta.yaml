@@ -17,16 +17,16 @@ build:
 
 requirements:
   build:
-    - toolchain
+    - {{ compiler('c') }}
     - automake
+  host:
     - perl
   run:
     - perl
 
 test:
   commands:
-    - help2man --help
-    - test -f ${PREFIX}/bin/help2man
+    - ${PREFIX}/bin/help2man --help
 
 about:
   home: https://www.gnu.org/software/help2man/
