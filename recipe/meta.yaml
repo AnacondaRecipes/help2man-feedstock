@@ -21,6 +21,7 @@ requirements:
   build:
     - {{ compiler('c') }}
     - make
+    - patch
   host:
     - perl
   run:
@@ -37,6 +38,7 @@ about:
   license_file: COPYING
   summary: 'help2man produces simple manual pages from the --help and --version output of other commands.'
   doc_url: https://www.gnu.org/software/help2man/
+  dev_url: https://www.gnu.org/software/help2man/
 
 extra:
   recipe-maintainers:
